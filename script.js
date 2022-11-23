@@ -6,7 +6,6 @@ inputBtn.addEventListener("click" , buscar )
 
 async function buscar () {
     event.preventDefault()
-
   
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input.value)}&appid=68879565a460a5b79a830eccb7f96e1c&units=metric&lang=pt_br`
     let result = await fetch(url)
